@@ -1,0 +1,351 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #003;
+    color: #fff;
+}
+*{
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo{
+    margin-right: 30px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #eeeeee;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.6);
+    transition: .5s ease-in-out;
+}
+
+.fondo:hover{
+    width: 300px;    
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    color: #068fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+i{
+    font-size: 22px;
+    color: #068fff;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003;
+    padding: 0;
+}
+
+nav img{
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+    filter: invert(0%) sepia(0%); 
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 40px;
+    position: relative;
+}
+
+nav ul li a{
+    color: #d3d3d3;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff1;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: #d81;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0,3s ease-in-out;
+}
+
+nav ul li a:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+<!--Para el slider ---->
+.cnt-slider-img{
+    font-family: sans-serif;
+    margin: auto;
+    background-color: #fff;
+    max-width: 100%;
+    width: 100%;
+}
+.cnt-slider-img> ul.slider{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+}
+
+.cnt-slider-img>ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cnt-slider-img>ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity.5s;
+    background-color: #fff;
+}
+
+.cnt-slider-img>ul.slider img{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cnt-slider-img> ul.slider img:first-child{
+    opacity: 1;
+}
+
+.cnt-slider-img> ul.slider li:target{
+    opacity: 1;
+}
+
+.cnt-slider-img>.menu{
+    text-align: center;
+}
+
+.cnt-slider-img> .menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.cnt-slider-img> .menu li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #777;
+    padding: 10px;
+    margin: 0 9px;
+    margin-top: 120px;
+    margin-bottom: 15px;
+    width: 6px;
+    height: 6px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.historia{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.title-historia{
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitle1-historia{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-subtitle1-historia{
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.subtitle2-historia{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-subtitle2-historia{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.subtitle3-historia{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-subtitle3-historia{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.subtitle4-historia{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-subtitle4-historia{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.poblacion{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.title-poblacion{
+    padding:10px;
+    font-size: 25px;
+    padding-left: 0;
+}
+
+.content-poblacion{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.list-distr-pob li{
+    list-style:circle;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.content2-poblacion{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.ubicacion{
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.title-ubicacion{
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.content-ubicacion{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.hidrografia{
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.title-hidrografia{
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.content-hidrografia{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.politica{
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.crea-polit-distr{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.title-dis{
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.content-dist{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.crea-polit-prov{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.title-prov{
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.content-prov{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+}
